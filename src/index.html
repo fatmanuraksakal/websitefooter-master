@@ -4,75 +4,238 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
   <title>HubSpot</title>
 </head>
 <body>
 
-  <!--Content-Section-->
-  <section class="grid grid-cols-4 container mx-auto bg-white p-6 rounded-lg shadow-md">
-    <div class="grid col-span-2 mx-auto px-4 py-10 gap-8">
-      <div>
-      <img class="h-auto rounded-md w-full" src="https://www.hubspot.com/hs-fs/hubfs/CRM_Integrate-apps.png?width=567&height=425&name=CRM_Integrate-apps.png" alt="" srcset="">
+  <!--Header-Start-->
+  <header class="flex flex-col md:flex-row items-center justify-between px-6 py-4 border-b shadow-sm gap-6 md:gap-0">
+    <div class="flex-shrink-0 mb-4 md:mb-0">
+    <img src="https://www.hubspot.com/hs-fs/hubfs/APAC_JAPAN/News%20Letter/HubSpot-logo-color.png?width=114&height=40&name=HubSpot-logo-color.png" alt="Logo" srcset="">
+    </div>
+
+    <div class="flex flex-col sm:flex-row gap-4">
+      <button class="bg-[#ff5e36] text-white text-lg md:text-xl px-6 md:px-10 py-3 md:py-4 rounded-md font-semibold hover:bg-orange-600 transition">Get started free
+      </button>
+      <button class="border border-[#ff5e36] text-[#ff5e36] text-lg md:text-xl px-6 md:px-10 py-3 md:py-4  rounded-md font-semibold hover:bg-orange-50 transition">Get a demo
+      </button>
+    </div>
+  </header>
+  <!--Header-End-->
+
+  <!--Header-1-->
+  <section class="bg-[#fef4ea] text-[#213343] py-20 px-5">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10 md:gap-16">
+        <div class="text-center md:text-left md:w-1/2">
+            <h2 class="text-4xl md:text-6xl font-bold mb-6 md:mb-10">The Best CRM Just Got Better</h2>
+            <p class="text-lg md:text-2xl mb-4">
+              HubSpot’s free, easy-to-use CRM tools are now powered by AI. 
+            </p>
+            <p class="mb-10 text-lg md:text-2xl">
+              Get set up fast, and start checking off your toughest tasks, all in one place with our Smart CRM.
+            </p>
+
+            <div class="mb-10 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <a href="#" class="bg-[#ff5c35] text-white px-6 py-4 md:px-8 md:py-5 rounded-md font-semibold text-lg md:text-2xl hover:bg-gray-100 transition-colors duration-200 hover:text-gray-900">Get Started Free</a>
+                <a href="#" class="border border-[#ff5c35] text-[#ff5c35] px-6 py-4 md:px-8 md:py-5 rounded-md text-lg md:text-2xl font-semibold hover:bg-white hover:text-gray-900 transition-colors duration-200">Get A Demo</a>
+            </div>
+            <p class="text-base md:text-lg text-gray-800 max-w-md mx-auto md:mx-0">
+              Get started with our free tools, or get a demo of premium products.
+            </p>
+        </div>
+
+        <div class="flex-shrink-0 md:w-1/2">
+            <img src="https://www.hubspot.com/hs-fs/hubfs/Smart%20CRM%20-%20Hero%20(1).png?width=511&height=468&name=Smart%20CRM%20-%20Hero%20(1).png" alt="" class="rounded-full md:rounded-none w-full max-w-md mx-auto md:mx-0">
+            </div>
+    </div>
+  </section>
+  <!--Header-1-->
+
+  <!--Banner-Start-->
+  <section class="container bg-white rounded-lg  m-5 shadow-md shadow-black/10 mx-auto p-6 md:p-10">
+   <div>
+    <h1 class=" text-center text-xl md:text-2xl font-bold text-gray-700 max-w-4xl mx-auto">248,000+ customers in over 135 countries grow their businesses with HubSpot</h1>
+    </div> 
+
+    <div class="bg-white flex items-center justify-center py-6 md:py-10 shadow-lg">
+    <div class="w-full max-w-4xl relative overflow-hidden rounded-lg shadow-md px-4 md:px-0">
+      <!-- Slides -->
+      <div id="slider" class="flex space-x-6 md:space-x-10 transition-transform duration-500 overflow-x-auto scrollbar-hide">
+        <img class="h-28 md:h-40 w-auto object-contain mx-auto flex-shrink-0" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz9O7oZpHalO-UxEolxoZMOS2ZMwYgzffnXg&s"/>
+        <img class="h-28 md:h-40 w-auto object-contain mx-auto flex-shrink-0" src="https://logos-world.net/wp-content/uploads/2023/12/Reddit-Logo.jpg" />
+        <img class="h-28 md:h-40 w-auto object-contain mx-auto flex-shrink-0" src="https://1000logos.net/wp-content/uploads/2017/12/Casio-Logo.png" />
+        <img class="h-28 md:h-40 w-auto object-contain mx-auto flex-shrink-0" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9eJ4G-70vZzKaalMFj7X2sVueS4-R_3Z4koAEufCbfiDk5uTOA8ptI1dTtolHRwRaMoM&usqp=CAU" />
+      </div>
+      <!-- Navigation Buttons -->
+      <button onclick="prevSlide()" class="absolute top-1/2 left-3 transform -translate-y-1/2 bg-black/50 text-white px-3 py-2 rounded-full hidden md:block">
+        <
+      </button>
+      <button onclick="nextSlide()" class="absolute top-1/2 right-3 transform -translate-y-1/2 bg-black/50 text-white px-3 py-2 rounded-full ">
+        ›
+      </button>
     </div>
   </div>
+</section>
+<!--Banner-End-->
 
-  <div class="grid col-span-2 px-4 py-10"> 
-    <h2 class="text-2xl font-bold text-[#2e475d] mb-4">Make your Smart CRM work for you</h2>
-    <p class="text-gray-700 mb-4 text-xl">Your business isn’t like anyone else’s. So, why use a CRM that can’t flex to fit what your team needs?</p>
-    <p class="text-gray-700 mb-4 text-xl">HubSpot Smart CRM is easy and quick to set up, and starts driving faster results from day one. Plus, you can customize the Smart CRM to boost customer connection and team efficiency.
-      <a href class="text-[#4fb06d] hover:underline font-semibold">Get Started</a>.
-    </p>
+<!--Content-Section-->
+  <section class="container mx-auto bg-white p-6 rounded-lg shadow-md">
+  <div class="flex flex-col md:grid md:grid-cols-4 gap-6 items-center">
+
+    <div class="md:col-span-2 flex justify-center px-4 py-10">
+      <img 
+        class="rounded-md w-full max-w-[567px] h-auto object-contain" 
+        src="https://www.hubspot.com/hs-fs/hubfs/CRM-Mar-31-2025-08-49-36-2627-PM.png?width=567&height=360&name=CRM-Mar-31-2025-08-49-36-2627-PM.png" 
+        alt="CRM Image"
+      >
+    </div>
+
+    <div class="md:col-span-2 px-4 py-10 flex flex-col justify-center text-center md:text-left">
+      <h2 class="text-2xl font-bold text-[#2e475d] mb-4">Meet your customers where they are</h2>
+      <p class="text-gray-700 mb-4 text-lg sm:text-xl">Your CRM is only as good as the data that powers it.</p>
+      <p class="text-gray-700 mb-4 text-lg sm:text-xl">That's why HubSpot Smart CRM connects all your customer data, giving your teams a shared, complete view of every customer to help you grow your business. Your sales, marketing, and service teams can reach out to your customers, right where, when and how they want.
+        <a href="#" class="text-[#4fb06d] hover:underline font-semibold ml-1">Get Started</a>
+      </p>
+    </div>
+
   </div>
-  </section>
-  <!--Content-Section-->
+</section>
+<!--Content-Section-->
 
+<!--Content-Section-1-->
+  <section class="container mx-auto px-4 mt-12">
+    <div class="mt-12 gap-6 ">
+      <h2 class="text-3xl font-bold mb-10 text-[#192733] text-center md:text-left">Popular Features</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          
+        <div class="bg-gray-200 p-6 rounded-lg shadow-md text-center">
+          <h3 class="text-2xl font-bold text-gray-600 mb-2">Contact Management</h3>
+          <p class="text-base text-black leading-relaxed"> Build views and run automated actions to easily manage your contacts and data.</p>
+        </div>
+        
+        <div class="bg-gray-200 p-6 rounded-lg shadow-md text-center">
+          <h3 class="text-2xl font-bold text-gray-600 mb-2">List Segmentation</h3>
+          <p class="text-base text-black leading-relaxed">Build static or dynamic contact lists using your HubSpot database.</p>
+        </div>
+        
+        <div class="bg-gray-200 p-6 rounded-lg shadow-md text-center">
+          <h3 class="text-2xl font-bold text-gray-600 mb-2">CRM Import & Export</h3>
+          <p class="text-base text-black leading-relaxed">Import and export CRM data into HubSpot.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Content-Section-1-->
+  
   <!--Content-Section-2-->
-  <section class="container mx-auto">
+  <section class="grid grid-cols-4 gap-6 container mx-auto bg-white p-6 rounded-lg shadow-md">
+    <div class="grid col-span-2 mx-auto px-4 py-10 gap-8">
+      <div>
+        <img class="h-auto rounded-md w-full" src="https://www.hubspot.com/hs-fs/hubfs/custom-video-thumbnails/CRM_Customer-relationships.png?width=567&height=360&name=CRM_Customer-relationships.png" alt="" srcset="">
+      </div>
+    </div>
+    
+    <div class="grid col-span-2 px-4 py-10"> 
+      <h2 class="text-2xl font-bold text-[#2e475d] mb-4">Swap insights between your teams</h2>
+      <p class="text-gray-700 mb-4 text-xl">When teams work together, they work better. Give your teams a single spot to connect with each other – and with your customers.</p>
+      <p class="text-gray-700 mb-4 text-xl">With the easy-to-use tools in HubSpot Smart CRM, every person on your team can work how they work best, while they all grow together.
+        <a href class="text-[#4fb06d] hover:underline font-semibold">Get Started</a>
+      </p>
+    </div>
+  </section>
+  <!--Content-Section-2-->
+  
+  <!--Content-Section-3-->
+  <section class="container mx-auto px-4 mt-12">
+    <div class="mt-12 gap-6 ">
+      <h2 class="text-3xl font-bold mb-10 text-[#192733]  text-center md:text-left">Popular Features</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="bg-gray-200 p-6 rounded-lg shadow-md text-center">
+          <h3 class="text-2xl font-bold text-gray-600 mb-4">Reporting Dashboard</h3>
+          <p class="text-base text-black leading-relaxed"> Get in-depth, customizable data on your performance, so you know how you're doing and where to improve.</p>
+        </div>
+        
+        <div class="bg-gray-200 p-6 rounded-lg shadow-md text-center">
+          <h3 class="text-2xl text-center font-bold text-gray-600 mb-4">Shared Inbox</h3>
+          <p class="text-base text-black leading-relaxed">Set up a shared inbox that your whole team can work from, easily managing 1-to-1 communications at scale.</p>
+        </div>
+        
+        <div class="bg-gray-200 p-6 rounded-lg shadow-md text-center">
+          <h3 class="text-2xl font-bold text-gray-600 mb-4">User Management</h3>
+          <p class="text-base text-black leading-relaxed">Add new users, or deactivate or remove existing users from your HubSpot account.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Content-Section-3-->
+  
+  <!--Content-Section-4-->
+  <section class="grid grid-cols-1 lg:grid-cols-4 container mx-auto bg-white p-6 rounded-lg shadow-md gap-6">
+    <div class="lg:col-span-2 px-4 py-10 flex justify-center items-center">
+      <div>
+        <img class="max-w-md h-auto object-contain rounded-md w-full" src="https://www.hubspot.com/hs-fs/hubfs/CRM_Integrate-apps.png?width=567&height=425&name=CRM_Integrate-apps.png" alt="" srcset="">
+      </div>
+    </div>
+    
+    <div class="lg:col-span-2 px-4 py-10 flex flex-col justify-center">
+      <h2 class="text-2xl font-bold text-[#2e475d] mb-4">Make your Smart CRM work for you</h2>
+      <p class="text-gray-700 mb-4 text-lg sm:text-xl">Your business isn’t like anyone else’s. So, why use a CRM that can’t flex to fit what your team needs?</p>
+      <p class="text-gray-700 mb-4 text-lg sm:text-xl">HubSpot Smart CRM is easy and quick to set up, and starts driving faster results from day one. Plus, you can customize the Smart CRM to boost customer connection and team efficiency.
+        <a href class="text-[#4fb06d] hover:underline font-semibold">Get Started</a>
+      </p>
+    </div>
+  </section>
+  <!--Content-Section-4-->
+
+  <!--Content-Section-5-->
+  <section class="container mx-auto px-4 sm:px-6 lg:px-8 mt-12">
       <div class="mt-12 px-4 gap-6 ">
-        <h2 class="text-3xl font-bold mb-10 text-[#192733]">Popular Features</h2>
+        <h2 class="text-3xl font-bold mb-10 text-[#192733] text-center md:text-left">Popular Features</h2>
         <div class="grid md:grid-cols-3 gap-6">
           
-          <div class="bg-[#2e475d6c] p-6 rounded-lg shadow-md text-center">
-            <h3 class="text-2xl text-center font-bold text-[#f86395bb]">Data Sync</h3>
-            <p class="text-m text-black"> Automatically sync data two ways between HubSpot and dozens of popular third-party apps. (Available for select integrations.)</p>
+          <div class="bg-gray-200 p-6 rounded-lg shadow-md text-center">
+            <h3 class="text-2xl font-bold text-gray-600 mb-3">Data Sync</h3>
+            <p class="text-base text-black leading-relaxed"> Automatically sync data two ways between HubSpot and dozens of popular third-party apps. (Available for select integrations.)</p>
           </div>
           
-          <div class="bg-[#2e475d6c] p-6 rounded-lg shadow-md text-center">
-            <h3 class="text-2xl text-center font-bold text-[#f86395bb]">App Marketplace Integrations</h3>
-            <p class="text-m text-black">Connect your HubSpot account to popular apps, available in our App Marketplace.</p>
+          <div class="bg-gray-200 p-6 rounded-lg shadow-md text-center">
+            <h3 class="text-2xl font-bold text-gray-600 mb-3">App Marketplace Integrations</h3>
+            <p class="text-base text-black leading-relaxed">Connect your HubSpot account to popular apps, available in our App Marketplace.</p>
           </div>
           
-          <div class="bg-[#2e475d6c] p-6 rounded-lg shadow-md text-center">
-            <h3 class="text-2xl text-center font-bold text-[#f86395bb]">HubSpot Mobile App</h3>
-            <p class="text-m text-black">Work and sell from anywhere with the HubSpot mobile app. Highlights include business card scanning, caller ID, and more.</p>
+          <div class="bg-gray-200 p-6 rounded-lg shadow-md text-center">
+            <h3 class="text-2xl font-bold text-gray-600 mb-3">HubSpot Mobile App</h3>
+            <p class="text-base text-black leading-relaxed">Work and sell from anywhere with the HubSpot mobile app. Highlights include business card scanning, caller ID, and more.</p>
           </div>
 
         </div>
       </div>
   </section>
-  <!--Content-Section-2-->
+  <!--Content-Section-5-->
 
   <!--Video-Link-Main-->
-  <section class="container bg-white rounded-lg  m-5 shadow-md shadow-black/10 mx-auto p-20">
+  <section class="container bg-white rounded-lg  m-5 shadow-md shadow-black/10 mx-auto p-6 sm:p-10 lg:p-20">
     <div>
-      <h2 class="text-2xl font-bold mb-4 text-center text-[#2e475d] " >See How Businesses Like Yours Use HubSpot To Grow Better</h2>
+      <h2 class="text-2xl sm:text-3xl font-bold mb-8 text-center text-[#2e475d] " >See How Businesses Like Yours Use HubSpot To Grow Better</h2>
       
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
         <div>
-        <iframe class="aspect-video w-full" src="https://youtube.com/embed/JvDZ9_sc0Tk">Parlor Skis</iframe>
-        <h3 class="text-center mt-2 font-semibold">Parlor Skis</h3>
+        <iframe class="aspect-video w-full rounded-md" src="https://www.youtube.com/embed/JvDZ9_sc0Tk"></iframe>
+        <h3 class="text-center mt-3 font-semibold">Parlor Skis</h3>
         </div>
         <div>
-        <iframe class="aspect-video w-full" src="https://youtube.com/embed/PNrnO31OD5M">EZ Texting</iframe>
-        <h3 class="text-center mt-2 font-semibold">EZ Texting</h3>
+        <iframe class="aspect-video w-full rounded-md" src="https://www.youtube.com/embed/PNrnO31OD5M"></iframe>
+        <h3 class="text-center mt-3 font-semibold">EZ Texting</h3>
         </div>
         <div>
-        <iframe class="aspect-video w-full" src="https://youtube.com/embed/fsmG5uH8axY">Usabilla</iframe>
-        <h3 class="text-center mt-2 font-semibold">Usabilla</h3>
+        <iframe class="aspect-video w-full rounded-md" src="https://www.youtube.com/embed/fsmG5uH8axY"></iframe>
+        <h3 class="text-center mt-3 font-semibold">Usabilla</h3>
         </div>
         <div>
-        <iframe class="aspect-video w-full" src="https://youtube.com/embed/j3XwfA-mYsw">Blissfully</iframe>
-        <h3 class="text-center mt-2 font-semibold">Blissfully</h3>
+        <iframe class="aspect-video w-full rounded-md" src="https://www.youtube.com/embed/j3XwfA-mYsw"></iframe>
+        <h3 class="text-center mt-3 font-semibold">Blissfully</h3>
         </div>
       </div>
     </div>
@@ -82,34 +245,34 @@
   <!--Footer-Start-->
   <footer class="bg-[#192733] text-white py-12 px-4">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
-        <div class="text-center md:text-left">
+        <div class="text-center md:text-left md:flex-1">
             <h2 class="text-3xl font-bold mb-4">Ready to grow?</h2>
-            <p class="text-3xl font-bold mb-4">
+            <p class="text-lg md:text-xl font-semibold mb-6 max-w-xl mx-auto md:mx-0">
                 Unify your data, teams, and tools with HubSpot Smart CRM. Get started for free, or get a demo of our premium software.
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                <a href class="bg-white text-gray-900 px-6 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors duration-200">Get Started Free</a>
-                <a href class="border border-white text-white px-6 py-3 rounded-md font-semibold hover:bg-white hover:text-gray-900 transition-colors duration-200">Get A Demo</a>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-8">
+                <a href="#" class="bg-white text-gray-900 px-6 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors duration-200">Get Started Free</a>
+                <a href="#" class="border border-white text-white px-6 py-3 rounded-md font-semibold hover:bg-white hover:text-gray-900 transition-colors duration-200">Get A Demo</a>
             </div>
-            <p class="text-sm mt-8 text-gray-400">
+            <p class="text-sm text-gray-400 max-w-md mx-auto md:mx-0">
                 For more detailed information on pricing, our free tools, and premium products, please see our 
                 <a href class="text-[#4fb06d] hover:underline">Pricing Page</a>.
             </p>
         </div>
 
         <div class="flex-shrink-0">
-            <img src="https://www.hubspot.com/hs-fs/hubfs/CSOL/module-assets/_cta_contentblock_headshots_headshot_8.png?width=510&name=_cta_contentblock_headshots_headshot_8.png" alt="" class="rounded-full md:rounded-none md:clip-path-custom w-xs">
+            <img src="https://www.hubspot.com/hs-fs/hubfs/CSOL/module-assets/_cta_contentblock_headshots_headshot_8.png?width=510&name=_cta_contentblock_headshots_headshot_8.png" alt="" class="rounded-full md:rounded-none w-40 md:w-56 object-cover">
             </div>
     </div>
 
-    <div class="border-t border-[#F86395] mt-12 pt-8 text-center text-gray-400 text-m">
+    <div class="border-t border-[#F86395] mt-12 pt-8 text-center text-gray-400 text-sm">
         <p class="mb-4">Copyright © 2025 HubSpot, Inc.</p>
         <div class="flex flex-wrap justify-center gap-x-6 gap-y-2">
-            <a href class="hover:underline">Legal Stuff</a>
-            <a href class="hover:underline">Privacy Policy</a>
-            <a href class="hover:underline">Security</a>
-            <a href class="hover:underline">Website Accessibility</a>
-            <a href class="hover:underline">Manage Cookies</a>
+            <a href="#" class="hover:underline">Legal Stuff</a>
+            <a href="#" class="hover:underline">Privacy Policy</a>
+            <a href="#" class="hover:underline">Security</a>
+            <a href="#" class="hover:underline">Website Accessibility</a>
+            <a href="#" class="hover:underline">Manage Cookies</a>
         </div>
     </div>
 </footer>
@@ -117,12 +280,34 @@
 
   <!--Message-Button-Start-->
   <div class="fixed bottom-4 right-4 z-50">
-    <button class=" bg-[#2e475d] hover:bg-[#4fb06d] text-white p-4 rounded-full ">
-      <img class="w-8 h-5" src="https://s3-alpha.figma.com/hub/file/2729701565/e8fddafd-3c5a-4a15-bff7-56bdf30aa336-cover.png" alt="" srcset="">
+    <button class="bg-[#2e475d] hover:bg-[#4fb06d] text-white p-3 rounded-full shadow-lg transition-colors duration-300 ease-in-out w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center">
+      <img class="w-6 h-4 md:w-7 md:h-5 lg:w-8 lg:h-5" src="https://s3-alpha.figma.com/hub/file/2729701565/e8fddafd-3c5a-4a15-bff7-56bdf30aa336-cover.png" alt="" srcset="">
     </button>
   </div>
   <!--Message-Button-End-->
   
+  <!--Slider-JS-->
+  <script>
+    const slider = document.getElementById('slider');
+    const totalSlides = slider.children.length;
+    let currentIndex = 0;
+
+    function updateSlidePosition() {
+      slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      updateSlidePosition();
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+      updateSlidePosition();
+    }
+  </script>
+  <!--Slider-JS-->
+
 </body>
 </html>
 

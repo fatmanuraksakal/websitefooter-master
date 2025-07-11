@@ -10,6 +10,7 @@
   "description": "",
   "dependencies": {
     "@tailwindcss/cli": "^4.1.11",
+    "pagedone": "^1.2.2",
     "tailwindcss": "^4.1.11"
   }
 }
